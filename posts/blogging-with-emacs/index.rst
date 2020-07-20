@@ -1,0 +1,10 @@
+.. title: Blogging with Emacs
+.. slug: blogging-with-emacs
+.. date: 2020-07-20 14:32:44 UTC+08:00
+.. tags: draft
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+I use vanilla emacs with blog-admin to create my posts. Currently I am trying out Nikola on github pages.
