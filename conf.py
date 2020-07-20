@@ -153,7 +153,8 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+# THEME = "bootblog4"
+THEME = "bootstrap4"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -660,7 +661,7 @@ GITHUB_REMOTE_NAME = 'origin'
 
 # Whether or not github_deploy should commit to the source branch automatically
 # before deploying.
-GITHUB_COMMIT_SOURCE = True
+GITHUB_COMMIT_SOURCE = False 
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
