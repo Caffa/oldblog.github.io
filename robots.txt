@@ -1,0 +1,4 @@
+Sitemap: https://Caffa.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: Caffa.github.io
