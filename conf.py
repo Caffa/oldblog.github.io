@@ -230,6 +230,9 @@ PAGES = (
     ("pages/*.html", "pages", "page.tmpl"),
 )
 
+# Add org files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.org", "posts", "post.tmpl"),)
+PAGES = PAGES + (("pages/*.org", "pages", "page.tmpl"),)
 
 # Below this point, everything is optional
 
@@ -293,6 +296,8 @@ TIMEZONE = "Asia/Singapore"
 # 'rest' is reStructuredText
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
+
+# Add the orgmode compiler to your COMPILERS dict.
 COMPILERS = {
     "rest": ['.rst', '.txt'],
     "markdown": ['.md', '.mdown', '.markdown'],
@@ -310,6 +315,7 @@ COMPILERS = {
     # but is disabled by default as it would conflict
     # with many of the others.
     # "pandoc": ['.rst', '.md', '.txt'],
+    "orgmode":".org"
 }
 
 # Enable reST directives that insert the contents of external files such
@@ -562,7 +568,7 @@ FRONT_INDEX_HEADER = {
 }
 
 # Create per-month archives instead of per-year
-# CREATE_MONTHLY_ARCHIVE = False
+# CREATE_MONTHLY_ARCHIVE = True
 # Create one large archive instead of per-year
 # CREATE_SINGLE_ARCHIVE = False
 # Create year, month, and day archives each with a (long) list of posts
@@ -912,7 +918,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+# INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -992,12 +998,12 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, intensedebate, isso, muut, commento
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = "isso"
+COMMENT_SYSTEM = "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+COMMENT_SYSTEM_ID = "pams-log-1"
 
 # Create index.html for page folders?
 # WARNING: if a page would conflict with the index file (usually
